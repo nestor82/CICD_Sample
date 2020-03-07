@@ -13,6 +13,8 @@
 		2921B074240F50D60001A508 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2921B072240F50D60001A508 /* Main.storyboard */; };
 		2921B076240F50D90001A508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2921B075240F50D90001A508 /* Assets.xcassets */; };
 		2921B079240F50D90001A508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2921B077240F50D90001A508 /* LaunchScreen.storyboard */; };
+		2921B1272413F2800001A508 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 2921B1252413F2800001A508 /* Fastfile */; };
+		2921B1282413F2800001A508 /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 2921B1262413F2800001A508 /* Appfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2921B075240F50D90001A508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2921B078240F50D90001A508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2921B07A240F50D90001A508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2921B1252413F2800001A508 /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fastfile; path = fastlane/Fastfile; sourceTree = "<group>"; };
+		2921B1262413F2800001A508 /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Appfile; path = fastlane/Appfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		2921B060240F50D60001A508 = {
 			isa = PBXGroup;
 			children = (
+				2921B1262413F2800001A508 /* Appfile */,
+				2921B1252413F2800001A508 /* Fastfile */,
 				2921B06B240F50D60001A508 /* fastlaneSample */,
 				2921B06A240F50D60001A508 /* Products */,
 			);
@@ -126,7 +132,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2921B079240F50D90001A508 /* LaunchScreen.storyboard in Resources */,
+				2921B1282413F2800001A508 /* Appfile in Resources */,
 				2921B076240F50D90001A508 /* Assets.xcassets in Resources */,
+				2921B1272413F2800001A508 /* Fastfile in Resources */,
 				2921B074240F50D60001A508 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
