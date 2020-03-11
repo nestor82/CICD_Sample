@@ -28,26 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2921B086240F91590001A508"
-               BuildableName = "fastlaneSampleTests.xctest"
-               BlueprintName = "fastlaneSampleTests"
-               ReferencedContainer = "container:fastlaneSample.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2921B094240F92BE0001A508"
-               BuildableName = "fastlaneSampleUITests.xctest"
-               BlueprintName = "fastlaneSampleUITests"
-               ReferencedContainer = "container:fastlaneSample.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
