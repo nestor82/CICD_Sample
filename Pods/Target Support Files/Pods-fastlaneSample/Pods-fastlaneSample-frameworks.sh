@@ -163,6 +163,9 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework"
 fi
+if [[ "$CONFIGURATION" == "Debug_P-00001" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework"
+fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework"
 fi
