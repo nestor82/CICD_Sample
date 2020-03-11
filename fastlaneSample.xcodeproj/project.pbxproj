@@ -150,7 +150,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n# Script Options File\nSCRIPT_OPTIONS_FILE=`pwd`/buildscriptOptions.plist\n\n\ncat << EOF > ${SCRIPT_OPTIONS_FILE}\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n    <key>items</key>\n    <array>\n        <dict>\n            <key>assets</key>\n            <array>\n                <dict>\n                    <key>kind</key>\n                    <string>software-package</string>\n                    <key>url</key>\n                    <string>https://dl.dropboxusercontent.com/s/pqelvp9tb40vikt/PopkonAir.ipa</string>\n                </dict>\n                <dict>\n                    <key>kind</key>\n                    <string>display-image</string>\n                    <key>url</key>\n                    <string>https://pic.popkontv.com/images/www/images/popkon/img_logo.png</string>\n                </dict>\n                <dict>\n                    <key>kind</key>\n                    <string>full-size-image</string>\n                    <key>url</key>\n                    <string>https://pic.popkontv.com/images/www/images/popkon/img_logo.png</string>\n                </dict>\n            </array>\n            <key>metadata</key>\n            <dict>\n                <key>bundle-identifier</key>\n                <string>com.popkontv.iosEt</string>\n                <key>bundle-version</key>\n                <string>5.3.0013</string>\n                <key>kind</key>\n                <string>software</string>\n                <key>title</key>\n                <string>${PRODUCT_NAME}</string>\n            </dict>\n        </dict>\n    </array>\n</dict>\n</plist>\n\nEOF\n  \n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n# Script Options File\nSCRIPT_OPTIONS_FILE=`pwd`/${PARTNERCODE}.plist\n\n\ncat << EOF > ${SCRIPT_OPTIONS_FILE}\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n    <key>items</key>\n    <array>\n        <dict>\n            <key>assets</key>\n            <array>\n                <dict>\n                    <key>kind</key>\n                    <string>software-package</string>\n                    <key>url</key>\n                    <string>https://dl.dropboxusercontent.com/${PARTNERCODE}.ipa</string>\n                </dict>\n                <dict>\n                    <key>kind</key>\n                    <string>display-image</string>\n                    <key>url</key>\n                    <string>https://pic.popkontv.com/images/www/images/popkon/img_logo.png</string>\n                </dict>\n                <dict>\n                    <key>kind</key>\n                    <string>full-size-image</string>\n                    <key>url</key>\n                    <string>https://pic.popkontv.com/images/www/images/popkon/img_logo.png</string>\n                </dict>\n            </array>\n            <key>metadata</key>\n            <dict>\n                <key>bundle-identifier</key>\n                <string>${PRODUCT_BUNDLE_IDENTIFIER}</string>\n                <key>bundle-version</key>\n                <string>${MARKETING_VERSION}</string>\n                <key>kind</key>\n                <string>software</string>\n                <key>title</key>\n                <string>${PRODUCT_NAME}</string>\n            </dict>\n        </dict>\n    </array>\n</dict>\n</plist>\n\nEOF\n  \n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -313,6 +313,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				PARTNERCODE = "P-00000D";
 				PRODUCT_BUNDLE_IDENTIFIER = com.popkontv.fastlaneSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -332,6 +333,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				PARTNERCODE = "P-00000R";
 				PRODUCT_BUNDLE_IDENTIFIER = com.popkontv.fastlaneSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -405,6 +407,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				PARTNERCODE = "P-00001R";
 				PRODUCT_BUNDLE_IDENTIFIER = com.popkontv.fastlaneSample;
 				PRODUCT_NAME = "P-00001";
 				SWIFT_VERSION = 5.0;
@@ -484,6 +487,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				PARTNERCODE = "P-00001D";
 				PRODUCT_BUNDLE_IDENTIFIER = com.popkontv.fastlaneSample;
 				PRODUCT_NAME = "P-00001";
 				SWIFT_VERSION = 5.0;
