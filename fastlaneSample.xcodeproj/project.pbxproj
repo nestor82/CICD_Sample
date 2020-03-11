@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		262EF6D54ED10E3FE29B33AC /* Pods_fastlaneSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AFE857797897E5462180E3 /* Pods_fastlaneSample.framework */; };
 		2921B06D240F50D60001A508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2921B06C240F50D60001A508 /* AppDelegate.swift */; };
 		2921B06F240F50D60001A508 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2921B06E240F50D60001A508 /* SceneDelegate.swift */; };
 		2921B071240F50D60001A508 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2921B070240F50D60001A508 /* ViewController.swift */; };
@@ -24,6 +25,10 @@
 		2921B075240F50D90001A508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2921B078240F50D90001A508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2921B07A240F50D90001A508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D799A6EE287A2CEC081773 /* Pods-fastlaneSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastlaneSample.release.xcconfig"; path = "Target Support Files/Pods-fastlaneSample/Pods-fastlaneSample.release.xcconfig"; sourceTree = "<group>"; };
+		89AFE857797897E5462180E3 /* Pods_fastlaneSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fastlaneSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C706D27442B01F0E7C4816 /* Pods-fastlaneSample.release_p00001.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastlaneSample.release_p00001.xcconfig"; path = "Target Support Files/Pods-fastlaneSample/Pods-fastlaneSample.release_p00001.xcconfig"; sourceTree = "<group>"; };
+		B51536AD222F94B3CCB7B96F /* Pods-fastlaneSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastlaneSample.debug.xcconfig"; path = "Target Support Files/Pods-fastlaneSample/Pods-fastlaneSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				262EF6D54ED10E3FE29B33AC /* Pods_fastlaneSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,8 @@
 			children = (
 				2921B06B240F50D60001A508 /* fastlaneSample */,
 				2921B06A240F50D60001A508 /* Products */,
+				8BE1578F1BE1DE20754607A5 /* Pods */,
+				C0C209A05C279598768CACBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +75,25 @@
 			path = fastlaneSample;
 			sourceTree = "<group>";
 		};
+		8BE1578F1BE1DE20754607A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B51536AD222F94B3CCB7B96F /* Pods-fastlaneSample.debug.xcconfig */,
+				77D799A6EE287A2CEC081773 /* Pods-fastlaneSample.release.xcconfig */,
+				92C706D27442B01F0E7C4816 /* Pods-fastlaneSample.release_p00001.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C0C209A05C279598768CACBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89AFE857797897E5462180E3 /* Pods_fastlaneSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,10 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2921B07D240F50D90001A508 /* Build configuration list for PBXNativeTarget "fastlaneSample" */;
 			buildPhases = (
+				8D356AD3F9621C17D98B2FAB /* [CP] Check Pods Manifest.lock */,
 				2921B065240F50D60001A508 /* Sources */,
 				2921B066240F50D60001A508 /* Frameworks */,
 				2921B067240F50D60001A508 /* Resources */,
 				2971A5C624187DFB00218B52 /* Make plist File */,
+				5CD2419E8431EB50A4BEF35E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +181,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n\n# Script Options File\nSCRIPT_OPTIONS_FILE=`pwd`/${EXECUTABLE_NAME}.plist\n\ncat << EOF > ${SCRIPT_OPTIONS_FILE}\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n    <key>items</key>\n    <array>\n        <dict>\n            <key>assets</key>\n            <array>\n                <dict>\n                    <key>kind</key>\n                    <string>software-package</string>\n                    <key>url</key>\n                    <string>https://dl.dropboxusercontent.com/s/pqelvp9tb40vikt/${TARGET_BUILD_DIR}_${WRAPPER_NAME}_${PRODUCT_NAME}.ipa</string>\n                </dict>\n                <dict>\n                    <key>kind</key>\n                    <string>display-image</string>\n                    <key>url</key>\n                    <string>https://pic.popkontv.com/images/www/images/popkon/img_logo.png</string>\n                </dict>\n                <dict>\n                    <key>kind</key>\n                    <string>full-size-image</string>\n                    <key>url</key>\n                    <string>https://pic.popkontv.com/images/www/images/popkon/img_logo.png</string>\n                </dict>\n            </array>\n            <key>metadata</key>\n            <dict>\n                <key>bundle-identifier</key>\n                <string>${PRODUCT_BUNDLE_IDENTIFIER}</string>\n                <key>bundle-version</key>\n                <string>${MARKETING_VERSION}</string>\n                <key>kind</key>\n                <string>software</string>\n                <key>title</key>\n                <string>PopkonAir</string>\n            </dict>\n        </dict>\n    </array>\n</dict>\n</plist>\n\nEOF\n";
+		};
+		5CD2419E8431EB50A4BEF35E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fastlaneSample/Pods-fastlaneSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fastlaneSample/Pods-fastlaneSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fastlaneSample/Pods-fastlaneSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D356AD3F9621C17D98B2FAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fastlaneSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -304,6 +372,7 @@
 		};
 		2921B07E240F50D90001A508 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B51536AD222F94B3CCB7B96F /* Pods-fastlaneSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -325,6 +394,7 @@
 		};
 		2921B07F240F50D90001A508 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D799A6EE287A2CEC081773 /* Pods-fastlaneSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -400,6 +470,7 @@
 		};
 		2971A5C82418921700218B52 /* Release_P00001 */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92C706D27442B01F0E7C4816 /* Pods-fastlaneSample.release_p00001.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
