@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '13.2'
 
 target 'fastlaneSample' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -7,6 +7,6 @@ target 'fastlaneSample' do
 
   # Pods for fastlaneSample
   #AES encode & decode
-  pod 'CryptoSwift',  '1.3.0'
+  #pod 'CryptoSwift',  '1.3.0'
 
 end
