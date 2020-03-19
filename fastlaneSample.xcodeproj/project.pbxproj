@@ -15,6 +15,7 @@
 		2921B079240F50D90001A508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2921B077240F50D90001A508 /* LaunchScreen.storyboard */; };
 		2921B1272413F2800001A508 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 2921B1252413F2800001A508 /* Fastfile */; };
 		2921B1282413F2800001A508 /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 2921B1262413F2800001A508 /* Appfile */; };
+		29E5B4BD24234336009D77D8 /* Snapfile in Resources */ = {isa = PBXBuildFile; fileRef = 29E5B4BC24234336009D77D8 /* Snapfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2921B07A240F50D90001A508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2921B1252413F2800001A508 /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fastfile; path = fastlane/Fastfile; sourceTree = "<group>"; };
 		2921B1262413F2800001A508 /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Appfile; path = fastlane/Appfile; sourceTree = "<group>"; };
+		29E5B4BC24234336009D77D8 /* Snapfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Snapfile; path = fastlane/Snapfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			children = (
 				2921B1262413F2800001A508 /* Appfile */,
 				2921B1252413F2800001A508 /* Fastfile */,
+				29E5B4BC24234336009D77D8 /* Snapfile */,
 				2921B06B240F50D60001A508 /* fastlaneSample */,
 				2921B06A240F50D60001A508 /* Products */,
 			);
@@ -131,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E5B4BD24234336009D77D8 /* Snapfile in Resources */,
 				2921B079240F50D90001A508 /* LaunchScreen.storyboard in Resources */,
 				2921B1282413F2800001A508 /* Appfile in Resources */,
 				2921B076240F50D90001A508 /* Assets.xcassets in Resources */,
