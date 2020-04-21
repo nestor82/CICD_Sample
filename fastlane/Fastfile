@@ -16,7 +16,6 @@
 default_platform(:ios)
 
 platform :ios do
-
     desc "Generate new localized screenshots"
     lane :screenshots do
       capture_screenshots(scheme: "fastlaneSample")
@@ -29,8 +28,15 @@ platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
     get_provisioning_profile
-    increment_build_number(xcodeproj: "fastlaneSample.xcodeproj")
-    build_app(scheme: "fastlaneSample")
-    # upload_to_testflight
+    # Increment the build number (not the version number)
+    # Providing the xcodeproj is optional
+    increment_build_number( build_number: latest_testflight_build_number + 1, xcodeproj: "fastlaneSample.xcodeproj" )
+    #increment_build_number(xcodeproj: "fastlaneSample.xcodeproj")
+    build_app(scheme: "fastlaneSample", export_method: "app-store", export_options: {
+      provisioningProfiles: {
+        "com.popkontv.fastlaneSample" => "FastlaneSample_Appstore",
+      }
+    })
+    upload_to_testflight
   end
 end
